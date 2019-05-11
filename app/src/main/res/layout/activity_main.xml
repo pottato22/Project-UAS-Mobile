@@ -4,35 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="40dp"
     tools:context=".MainActivity">
 
+    <!--Username-->
     <TextView
-        android:id="@+id/test_username"
-        android:layout_width="wrap_content"
+        android:id="@+id/login_text_username"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This should be username"
+        android:padding="3dp"
+        android:text="@string/login_text_username"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/test_password"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/login_edit_username"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This should be password"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/test_username" />
+        app:layout_constraintTop_toBottomOf="@id/login_text_username" />
+
+    <!--Password-->
+    <TextView
+        android:id="@+id/login_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="@string/login_text_password"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_edit_username" />
+
+    <!--Login Button-->
+    <EditText
+        android:id="@+id/login_edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_text_password" />
 
     <Button
+        android:id="@+id/main_btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/main_btn_login"
-        android:text="Login"
+        android:text="@string/login_text_login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/test_password"
-        />
+        app:layout_constraintTop_toBottomOf="@id/login_edit_password" />
 
 </android.support.constraint.ConstraintLayout>

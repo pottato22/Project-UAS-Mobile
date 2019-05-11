@@ -1,6 +1,9 @@
 package id.ac.umn.jameschristianwira;
 
+import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,7 +16,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     String DB_NAME = "credential.db";
-    TextView testUsername, testPassword;
     EditText edtUsername, edtPassword;
     String username, password;
     Button btnLogin;
@@ -22,41 +24,71 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setTitle("Log in");
 
-        testUsername = findViewById(R.id.test_username);
-        testPassword = findViewById(R.id.test_password);
 
         btnLogin = findViewById(R.id.main_btn_login);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Login button clicked", Toast.LENGTH_SHORT).show();
+                if(verifyLogin()){
+                    Log.i("Login Process", "Username and password match");
+                    Log.i("Login Process", "Changing intent");
+                    makeToast("Login success");
+                    //Start change intent here
 
-                DBAdapter dbAdapter = new DBAdapter(getApplicationContext(), DB_NAME, null, 1);
-                dbAdapter.openDatabase();
-
-                Cursor cursor = dbAdapter.getCredential();
-
-                cursor.moveToFirst();
-                Log.d(this.getClass().toString(), "Start cursor");
-                if(cursor.getString(1) == null) Log.d(this.getClass().toString(), "No data");
-                else Log.d(this.getClass().toString(), cursor.getString(1));
-                Log.d(this.getClass().toString(), "End cursor");
-
-                //cursor.moveToFirst();
-
-                username = cursor.getString(0);
-                password = cursor.getString(1);
-
-                Log.d(this.getClass().toString(), username);
-                Log.d(this.getClass().toString(), password);
-
-                testUsername.setText(username);
-                testPassword.setText(password);
-
-                dbAdapter.close();
+                    Intent intent = new Intent(MainActivity.this, DataActivity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Log.i("Login Process", "Username and password don't match");
+                    makeToast("Username and password don't match");
+                }
             }
         });
+    }
+
+    public boolean verifyLogin(){
+        //Toast.makeText(MainActivity.this, "Login button clicked", Toast.LENGTH_SHORT).show();
+
+        Log.i("Login Process", "Get username and password from db");
+        DBAdapter dbAdapter = new DBAdapter(getApplicationContext(), DB_NAME, null, 1);
+        dbAdapter.openDatabase();
+
+        Cursor cursor = dbAdapter.getCredential();
+
+        cursor.moveToFirst();
+
+        username = cursor.getString(0);
+        password = cursor.getString(1);
+
+        dbAdapter.close();
+
+        Log.i("Login Process", "Comparing input and data from db");
+
+        String inputUser = getUserInput("username");
+        String inputPass = getUserInput("password");
+
+        return inputUser.equals(username) && inputPass.equals(password);
+    }
+
+    public String getUserInput(String text){
+        String result = "";
+
+        if(text.equals("username")){
+            edtUsername = findViewById(R.id.login_edit_username);
+            result = edtUsername.getText().toString();
+        }
+        if(text.equals("password")){
+            edtPassword = findViewById(R.id.login_edit_password);
+            result = edtPassword.getText().toString();
+        }
+
+        return result;
+    }
+
+    public void makeToast(String text){
+        Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 }
