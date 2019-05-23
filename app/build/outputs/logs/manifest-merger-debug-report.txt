@@ -1,20 +1,22 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:2:1-11:12
-MERGED from [com.android.support:design:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7e130d5b97ecc2638f112c8b2eca5a87\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\c2daa71064e312dafffff1ac095080d8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\a5c980a42f401ab3d6dadd9a53ab4b2f\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\222340015c6757e817ffbfc938e49ada\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\f62e2f1f553d84bb6711b04ae60be3d2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\74dc33eb80aadf942818e92d4461c8c7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\0a127ec111198a3ccb8b848fb4d0f94f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\a0a80fb138aa0fb392911506e59878ce\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\8d2b85f1d199f4510b82ff8df66da434\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\ff0caca34abaec205ca0ddcadc4f86ee\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\74dc33eb80aadf942818e92d4461c8c7\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\01c2e2db9555e8e75f82703ae8260fee\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\d66611c50cb0253c345bf0405f266d5d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\3bd6f80f992416f6ada6c332e32e5af2\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\b3a560ebcf0eede0c35f04f2b1d89642\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\da85258e92c293ba6fcaf870a6114cf2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\5f23f591a0bcd43f16ce374a2d4149d8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\9cd76101fd7d441887702f5ae92538f8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:coordinatorlayout:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\65ad87fea45732e380d0786f89d972da\AndroidManifest.xml:17:1-22:12
@@ -35,20 +37,20 @@ MERGED from [com.android.support:interpolator:28.0.0] D:\FTI\IF634_IS534_MOBILE\
 MERGED from [android.arch.lifecycle:livedata:1.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\510f5ca2c18be4b99b8420f8f871d8a4\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\01f73d09c14f32df2588a16d22235f98\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\410cc2c16c5d2f3faa25685d53176d07\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-26:12
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:11-69
@@ -57,11 +59,9 @@ ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:7:5-24:19
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:7:5-28:19
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7e130d5b97ecc2638f112c8b2eca5a87\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7e130d5b97ecc2638f112c8b2eca5a87\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-compat:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\33bee1d96fce8916305ef4ef5957b1a1\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\33bee1d96fce8916305ef4ef5957b1a1\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\162cda0319b6fe5d4ade425ca7d28586\AndroidManifest.xml:22:5-23:19
@@ -80,54 +80,66 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] D:\FTI\IF634_IS534_
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:13:9-40
+activity#id.ac.umn.jameschristianwira.DetailActivity
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:15:9-18:59
+	android:label
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:17:13-58
+	android:theme
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:18:13-56
+	android:name
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:16:13-43
 activity#id.ac.umn.jameschristianwira.TestActivity
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:15:9-50
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:19:9-50
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:15:19-47
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:19:19-47
 activity#id.ac.umn.jameschristianwira.DataActivity
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:16:9-50
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:20:9-50
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:16:19-47
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:20:19-47
 activity#id.ac.umn.jameschristianwira.MainActivity
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:9-27:20
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:17:19-47
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:19:17-69
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:19:25-66
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:17-77
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7e130d5b97ecc2638f112c8b2eca5a87\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7e130d5b97ecc2638f112c8b2eca5a87\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\c2daa71064e312dafffff1ac095080d8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\c2daa71064e312dafffff1ac095080d8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\a5c980a42f401ab3d6dadd9a53ab4b2f\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\a5c980a42f401ab3d6dadd9a53ab4b2f\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\222340015c6757e817ffbfc938e49ada\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\222340015c6757e817ffbfc938e49ada\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\f62e2f1f553d84bb6711b04ae60be3d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\f62e2f1f553d84bb6711b04ae60be3d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\74dc33eb80aadf942818e92d4461c8c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\74dc33eb80aadf942818e92d4461c8c7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\0a127ec111198a3ccb8b848fb4d0f94f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\0a127ec111198a3ccb8b848fb4d0f94f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\a0a80fb138aa0fb392911506e59878ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\a0a80fb138aa0fb392911506e59878ce\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\8d2b85f1d199f4510b82ff8df66da434\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\8d2b85f1d199f4510b82ff8df66da434\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\ff0caca34abaec205ca0ddcadc4f86ee\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\ff0caca34abaec205ca0ddcadc4f86ee\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\74dc33eb80aadf942818e92d4461c8c7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\74dc33eb80aadf942818e92d4461c8c7\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\01c2e2db9555e8e75f82703ae8260fee\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\01c2e2db9555e8e75f82703ae8260fee\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\d66611c50cb0253c345bf0405f266d5d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-utils:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\d66611c50cb0253c345bf0405f266d5d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\3bd6f80f992416f6ada6c332e32e5af2\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\3bd6f80f992416f6ada6c332e32e5af2\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\b3a560ebcf0eede0c35f04f2b1d89642\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\b3a560ebcf0eede0c35f04f2b1d89642\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\da85258e92c293ba6fcaf870a6114cf2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\da85258e92c293ba6fcaf870a6114cf2\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\5f23f591a0bcd43f16ce374a2d4149d8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\5f23f591a0bcd43f16ce374a2d4149d8\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:viewpager:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\9cd76101fd7d441887702f5ae92538f8\AndroidManifest.xml:20:5-44

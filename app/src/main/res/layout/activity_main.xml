@@ -7,46 +7,48 @@
     android:padding="40dp"
     tools:context=".MainActivity">
 
-    <!--Username-->
-    <TextView
-        android:id="@+id/login_text_username"
+    <LinearLayout
+        android:id="@+id/login_main_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="3dp"
-        android:text="@string/login_text_username"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        >
+        <!--Username-->
+        <TextView
+            android:id="@+id/login_text_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/login_text_username"
+            />
 
-    <EditText
-        android:id="@+id/login_edit_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_text_username" />
+        <EditText
+            android:id="@+id/login_edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
 
-    <!--Password-->
-    <TextView
-        android:id="@+id/login_text_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="3dp"
-        android:text="@string/login_text_password"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_edit_username" />
+        <!--Password-->
+        <TextView
+            android:id="@+id/login_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            />
 
-    <!--Login Button-->
-    <EditText
-        android:id="@+id/login_edit_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_text_password" />
+        <!--Login Button-->
+        <EditText
+            android:id="@+id/login_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/main_btn_login"
@@ -55,6 +57,7 @@
         android:text="@string/login_text_login"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_edit_password" />
+        app:layout_constraintTop_toBottomOf="@id/login_main_linear" />
+
 
 </android.support.constraint.ConstraintLayout>

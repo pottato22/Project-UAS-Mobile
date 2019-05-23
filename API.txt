@@ -1,0 +1,41 @@
+API: Dota 2 API, URL: https://wiki.teamfortress.com/wiki/WebAPI#Dota_2
+
+GetItem: 
+http://cdn.dota2.com/apps/dota2/images/items/<item_name>_lg.png
+item_name without item_
+
+GetGameItems:
+http://api.steampowered.com/IEconDOTA2_570/GetGameItems/v1?key=1F18B74411FABB8D9BEA08599C06578F
+
+API Key:
+1F18B74411FABB8D9BEA08599C06578F
+
+sobi mask = Sage's Mask
+gem = Gem of True Sight
+blink = Blink Dagger
+infused raindrop = Infused Raindrops
+recipe moon shard = ga ada
+gauntlets = Gauntlets of Strength
+slippers = Slippers of Agility
+mantle = Mantle of Intelligence
+branches = Iron Branch
+Boots of Elves = Band of Elvenskin
+
+Robe = Robe of the Magi
+Gloves = Gloves of Haste
+Lifesteal = Morbid Mask
+Boots = Boots of Speed
+Ghost = Ghost Scepter
+Ward Observer = Observer Ward
+Ward Sentry = Sentry Ward
+recipe_ward_dispenser = ga ada
+ward_dispenser = ilangin aja
+Tpscroll = Town Portal Scroll
+
+Ilangin:
+- item_recipe_moon_shard
+- item_recipe_ward_dispenser
+- item_ward_dispenser
+- item_tango_single
+
+https://sv443.net/jokeapi

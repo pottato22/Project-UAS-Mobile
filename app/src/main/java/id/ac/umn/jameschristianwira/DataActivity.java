@@ -37,6 +37,7 @@ public class DataActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     RecyclerViewAdapter adapter;
     RecyclerView.LayoutManager layoutManager;
+    BroadcastReciever reciever;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,9 +51,16 @@ public class DataActivity extends AppCompatActivity {
 
 //        new fetchPhoto().execute("http://static.tvmaze.com/uploads/images/medium_portrait/63/158798.jpg");
 
-        new fetchData().execute("cast");
+        if(characters.isEmpty()){
+            new fetchData().execute("cast");
+        }
 
         //viewData();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
     private class fetchData extends AsyncTask<String, Void, String>{
@@ -101,7 +109,7 @@ public class DataActivity extends AppCompatActivity {
 
                 jsonString = stringBuffer.toString();
 
-                JSONArray  jsonArray = new JSONArray(jsonString);
+                JSONArray jsonArray = new JSONArray(jsonString);
 
                 if(true){
                     for(int i=0; i<jsonArray.length(); i++){
@@ -119,7 +127,7 @@ public class DataActivity extends AppCompatActivity {
                             jsonPerson.getString("name"),
                             jsonPerson.getString("birthday"),
                             jsonPerson.getString("gender"),
-                                image
+                            image
                         );
 
                         characters.add(character);
@@ -195,11 +203,9 @@ public class DataActivity extends AppCompatActivity {
         Log.d("viewData", "Start showing data");
 
         recyclerView = findViewById(R.id.data_recycler_view);
-        adapter = new RecyclerViewAdapter(characters, getApplicationContext());
+        adapter = new RecyclerViewAdapter(characters, getApplicationContext(), reciever);
         layoutManager = new LinearLayoutManager(DataActivity.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
     }
-
-
 }

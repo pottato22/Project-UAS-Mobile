@@ -6,7 +6,9 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="28" />
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,6 +20,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="id.ac.umn.jameschristianwira.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="id.ac.umn.jameschristianwira.TestActivity" />
+        <activity android:name="id.ac.umn.jameschristianwira.DataActivity" />
         <activity android:name="id.ac.umn.jameschristianwira.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
