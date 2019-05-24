@@ -40,7 +40,7 @@ public class Characters {
         return gender;
     }
 
-    public Bitmap getPhoto(){
+    public Bitmap getPhoto() {
         return photo;
     }
 }

@@ -308,6 +308,10 @@
         "source": "D:\\FTI\\IF634_IS534_MOBILE\\android-gradle\\caches\\transforms-2\\files-2.1\\c2daa71064e312dafffff1ac095080d8\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
+        "merged": "C:\\Project\\ProjectUAS_14026\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_about_me.xml.flat",
+        "source": "C:\\Project\\ProjectUAS_14026\\app\\src\\main\\res\\layout\\activity_about_me.xml"
+    },
+    {
         "merged": "C:\\Project\\ProjectUAS_14026\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "D:\\FTI\\IF634_IS534_MOBILE\\android-gradle\\caches\\transforms-2\\files-2.1\\a5c980a42f401ab3d6dadd9a53ab4b2f\\res\\layout\\abc_alert_dialog_material.xml"
     },
@@ -526,6 +530,10 @@
     {
         "merged": "C:\\Project\\ProjectUAS_14026\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
         "source": "D:\\FTI\\IF634_IS534_MOBILE\\android-gradle\\caches\\transforms-2\\files-2.1\\a5c980a42f401ab3d6dadd9a53ab4b2f\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Project\\ProjectUAS_14026\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu.xml.flat",
+        "source": "C:\\Project\\ProjectUAS_14026\\app\\src\\main\\res\\menu\\menu.xml"
     },
     {
         "merged": "C:\\Project\\ProjectUAS_14026\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",

@@ -18,7 +18,7 @@ public class BroadcastReciever extends BroadcastReceiver {
         makeToast(context, message);
     }
 
-    public void makeToast(Context context, String text){
+    public void makeToast(Context context, String text) {
         Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
     }
 }

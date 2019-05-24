@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\c2daa71064e312dafffff1ac095080d8\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\a5c980a42f401ab3d6dadd9a53ab4b2f\AndroidManifest.xml:17:1-22:12
@@ -37,20 +37,20 @@ MERGED from [com.android.support:interpolator:28.0.0] D:\FTI\IF634_IS534_MOBILE\
 MERGED from [android.arch.lifecycle:livedata:1.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\510f5ca2c18be4b99b8420f8f871d8a4\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\01f73d09c14f32df2588a16d22235f98\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\410cc2c16c5d2f3faa25685d53176d07\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-30:12
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:2:11-69
@@ -59,7 +59,7 @@ ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:7:5-28:19
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:7:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:2.0.0-alpha5] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\7675bf499c993baa02add9188091af04\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:support-compat:28.0.0] D:\FTI\IF634_IS534_MOBILE\android-gradle\caches\transforms-2\files-2.1\33bee1d96fce8916305ef4ef5957b1a1\AndroidManifest.xml:22:5-94
@@ -96,20 +96,24 @@ activity#id.ac.umn.jameschristianwira.DataActivity
 ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:20:9-50
 	android:name
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:20:19-47
+activity#id.ac.umn.jameschristianwira.AboutMe
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:9-44
+	android:name
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:19-42
 activity#id.ac.umn.jameschristianwira.MainActivity
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:9-27:20
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:19-47
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:22:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:23:17-69
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:23:25-66
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:25:17-77
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:25:27-74
+		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:26:27-74
 uses-sdk
 INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml

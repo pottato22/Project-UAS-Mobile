@@ -1,17 +1,21 @@
 package id.ac.umn.jameschristianwira;
 
-import android.app.NotificationManager;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -25,8 +29,6 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.Future;
 
 public class DataActivity extends AppCompatActivity {
 
@@ -38,6 +40,8 @@ public class DataActivity extends AppCompatActivity {
     RecyclerViewAdapter adapter;
     RecyclerView.LayoutManager layoutManager;
     BroadcastReciever reciever;
+
+    TextView loadingText, progressText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +55,30 @@ public class DataActivity extends AppCompatActivity {
 
 //        new fetchPhoto().execute("http://static.tvmaze.com/uploads/images/medium_portrait/63/158798.jpg");
 
-        if(characters.isEmpty()){
+        loadingText = findViewById(R.id.data_loadingtext);
+        progressText = findViewById(R.id.data_progress);
+
+        if (characters.isEmpty()) {
             new fetchData().execute("cast");
         }
+    }
 
-        //viewData();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_about_me:
+                Intent intent = new Intent(DataActivity.this, AboutMe.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -63,8 +86,9 @@ public class DataActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    private class fetchData extends AsyncTask<String, Void, String>{
+    private class fetchData extends AsyncTask<String, Void, String> {
         public Bitmap image;
+        public int length, current;
 
         @Override
         protected void onPreExecute() {
@@ -78,7 +102,7 @@ public class DataActivity extends AppCompatActivity {
 
             String jsonString = null;
 
-            try{
+            try {
 //                String urlString = "http://api.steampowered.com/IEconDOTA2_570/GetGameItems/v1?key=1F18B74411FABB8D9BEA08599C06578F";
 //                String urlString = "https://sv443.net/jokeapi/category/Programming?blacklistFlags=nsfw,religious,politics";
                 String urlString = "http://api.tvmaze.com/shows/82/cast";
@@ -92,18 +116,18 @@ public class DataActivity extends AppCompatActivity {
                 InputStream inputStream = urlConnection.getInputStream();
                 StringBuffer stringBuffer = new StringBuffer();
 
-                if(inputStream == null){
+                if (inputStream == null) {
                     return null;
                 }
 
                 bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
 
                 String line;
-                while ((line = bufferedReader.readLine()) != null){
+                while ((line = bufferedReader.readLine()) != null) {
                     stringBuffer.append(line + "\n");
                 }
 
-                if(stringBuffer.length() == 0){
+                if (stringBuffer.length() == 0) {
                     return null;
                 }
 
@@ -111,8 +135,13 @@ public class DataActivity extends AppCompatActivity {
 
                 JSONArray jsonArray = new JSONArray(jsonString);
 
-                if(true){
-                    for(int i=0; i<jsonArray.length(); i++){
+                length = jsonArray.length();
+
+                if (true) {
+                    for (int i = 0; i < jsonArray.length(); i++) {
+                        current = i;
+                        publishProgress();
+
                         JSONObject theData = jsonArray.getJSONObject(i);
 
                         JSONObject jsonPerson = new JSONObject(theData.getString("person"));
@@ -123,11 +152,11 @@ public class DataActivity extends AppCompatActivity {
                         //Log.d("GETDATA", "Char name: " + jsonChar.getString("name"));
 
                         Characters character = new Characters(
-                            jsonChar.getString("name"),
-                            jsonPerson.getString("name"),
-                            jsonPerson.getString("birthday"),
-                            jsonPerson.getString("gender"),
-                            image
+                                jsonChar.getString("name"),
+                                jsonPerson.getString("name"),
+                                jsonPerson.getString("birthday"),
+                                jsonPerson.getString("gender"),
+                                image
                         );
 
                         characters.add(character);
@@ -137,25 +166,20 @@ public class DataActivity extends AppCompatActivity {
 
                 //Log.d("FETCHDATA", jsonString);
                 Log.d("FETCHDATA", "" + jsonArray.length());
-            }
-            catch (MalformedURLException e){
+            } catch (MalformedURLException e) {
                 Log.e("MALFORMED", "MalformedURLException: " + e.getMessage());
-            }
-            catch (IOException e){
+            } catch (IOException e) {
                 Log.e("IO", "IOException: " + e.getMessage());
-            }
-            catch (JSONException e){
+            } catch (JSONException e) {
                 Log.e("JSON", "JSONException: " + e.getMessage());
-            }
-            finally {
-                if(urlConnection != null){
+            } finally {
+                if (urlConnection != null) {
                     urlConnection.disconnect();
                 }
-                if(bufferedReader != null){
-                    try{
+                if (bufferedReader != null) {
+                    try {
                         bufferedReader.close();
-                    }
-                    catch (IOException e){
+                    } catch (IOException e) {
                         Log.e("BUFFEREDIOEXCEPTION", "IOException: " + e.getMessage());
                     }
                 }
@@ -165,16 +189,30 @@ public class DataActivity extends AppCompatActivity {
         }
 
         @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+
+            progressText.clearComposingText();
+            progressText.setText(current + "/" + length);
+        }
+
+        @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
             Log.d("onPostExecute", s);
 
+            ProgressBar progressBar = findViewById(R.id.data_progressbar);
+
+            progressBar.setVisibility(View.GONE);
+            loadingText.setVisibility(View.GONE);
+            progressText.setVisibility(View.GONE);
+
             viewData();
         }
     }
 
-    private class fetchPhoto extends AsyncTask<String, Bitmap, Bitmap>{
+    private class fetchPhoto extends AsyncTask<String, Bitmap, Bitmap> {
         @Override
         protected Bitmap doInBackground(String... strings) {
             String imageURL = strings[0];
@@ -199,7 +237,7 @@ public class DataActivity extends AppCompatActivity {
         }
     }
 
-    public void viewData(){
+    public void viewData() {
         Log.d("viewData", "Start showing data");
 
         recyclerView = findViewById(R.id.data_recycler_view);

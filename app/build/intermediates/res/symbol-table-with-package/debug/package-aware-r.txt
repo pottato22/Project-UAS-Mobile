@@ -964,6 +964,10 @@ id SHOW_ALL
 id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
+id aboutme_name
+id aboutme_nim
+id aboutme_tambahan
+id aboutme_tambahan_list
 id accelerate
 id action0
 id action_bar
@@ -1021,6 +1025,9 @@ id coordinator
 id cos
 id custom
 id customPanel
+id data_loadingtext
+id data_progress
+id data_progressbar
 id data_recycler_view
 id decelerate
 id decor_content_parent
@@ -1102,6 +1109,7 @@ id main_btn_login
 id masked
 id match_parent
 id media_actions
+id menu_about_me
 id message
 id middle
 id mini
@@ -1258,6 +1266,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_about_me
 layout activity_data
 layout activity_detail
 layout activity_main
@@ -1297,6 +1306,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
@@ -1338,12 +1348,21 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string about_me_tambahan_fileoutputstream
+string about_me_tambahan_handler
+string about_me_tambahan_notification
+string about_me_tambahan_notification_manager
+string about_me_text_nama
+string about_me_text_nama_lengkap
+string about_me_text_nim
+string about_me_text_nim_lengkap
+string about_me_text_tambahan
+string about_me_text_titik_dua
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_pattern
 string login_text_login
-string login_text_password
 string login_text_username
 string password_toggle_content_description
 string path_password_eye

@@ -1,21 +1,21 @@
 package id.ac.umn.jameschristianwira;
 
 import android.app.Notification;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -71,7 +71,7 @@ public class DetailActivity extends AppCompatActivity {
         });
     }
 
-    public void sendOnChannel(String realname, String charname){
+    public void sendOnChannel(String realname, String charname) {
         String title = "Hi, I'm " + realname;
         String message = "I'm playing as " + charname + " in Game of Thrones";
 
@@ -85,39 +85,37 @@ public class DetailActivity extends AppCompatActivity {
         notificationManagerCompat.notify(1, notification);
     }
 
-    public void getDataFromExtra(){
+    public void getDataFromExtra() {
         Bundle bundle = getIntent().getExtras();
 
-        if(bundle != null){
+        if (bundle != null) {
             Characters temp = new Characters(
-                bundle.getString("charname"),
-                bundle.getString("realname"),
-                bundle.getString("birthday"),
-                bundle.getString("gender"),
-                getPhotoFromFile()
+                    bundle.getString("charname"),
+                    bundle.getString("realname"),
+                    bundle.getString("birthday"),
+                    bundle.getString("gender"),
+                    getPhotoFromFile()
             );
 
             character = temp;
-        }
-        else character = null;
+        } else character = null;
     }
 
-    public Bitmap getPhotoFromFile(){
-        try{
+    public Bitmap getPhotoFromFile() {
+        try {
             Bitmap bitmap = BitmapFactory.decodeStream(
-                getApplicationContext().openFileInput("temp")
+                    getApplicationContext().openFileInput("temp")
             );
 
             return bitmap;
-        }
-        catch (FileNotFoundException e){
+        } catch (FileNotFoundException e) {
             Log.e("READ FILE", "Read file error message: " + e.getMessage());
         }
 
         return null;
     }
 
-    public void showData(){
+    public void showData() {
         photo = findViewById(R.id.detail_photo);
         tvFullname = findViewById(R.id.detail_fullname);
         tvCharname = findViewById(R.id.detail_charname);
@@ -131,8 +129,26 @@ public class DetailActivity extends AppCompatActivity {
         tvGender.setText(": " + character.getGender());
     }
 
-    public void makeToast(String text){
+    public void makeToast(String text) {
         Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.menu_about_me:
+                Intent intent = new Intent(DetailActivity.this, AboutMe.class);
+                startActivity(intent);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

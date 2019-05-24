@@ -15,12 +15,12 @@ public class Notif extends Application {
         createNotificationChannels();
     }
 
-    private void createNotificationChannels(){
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
+    private void createNotificationChannels() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
-                CHANNEL_1_ID,
-                "Channel 1",
-                NotificationManager.IMPORTANCE_DEFAULT
+                    CHANNEL_1_ID,
+                    "Channel 1",
+                    NotificationManager.IMPORTANCE_DEFAULT
             );
             channel.setDescription("This is channel 1");
 

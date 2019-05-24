@@ -2,15 +2,12 @@ package id.ac.umn.jameschristianwira;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Color;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(verifyLogin()){
+                if (verifyLogin()) {
                     Log.i("Login Process", "Username and password match");
                     Log.i("Login Process", "Changing intent");
                     makeToast("Login success");
@@ -40,8 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent intent = new Intent(MainActivity.this, DataActivity.class);
                     startActivity(intent);
-                }
-                else {
+                } else {
                     Log.i("Login Process", "Username and password don't match");
                     makeToast("Username and password don't match");
                 }
@@ -49,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public boolean verifyLogin(){
+    public boolean verifyLogin() {
         //Toast.makeText(MainActivity.this, "Login button clicked", Toast.LENGTH_SHORT).show();
 
         Log.i("Login Process", "Get username and password from db");
@@ -73,14 +69,14 @@ public class MainActivity extends AppCompatActivity {
         return inputUser.equals(username) && inputPass.equals(password);
     }
 
-    public String getUserInput(String text){
+    public String getUserInput(String text) {
         String result = "";
 
-        if(text.equals("username")){
+        if (text.equals("username")) {
             edtUsername = findViewById(R.id.login_edit_username);
             result = edtUsername.getText().toString();
         }
-        if(text.equals("password")){
+        if (text.equals("password")) {
             edtPassword = findViewById(R.id.login_edit_password);
             result = edtPassword.getText().toString();
         }
@@ -88,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
 
-    public void makeToast(String text){
+    public void makeToast(String text) {
         Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
     }
 }

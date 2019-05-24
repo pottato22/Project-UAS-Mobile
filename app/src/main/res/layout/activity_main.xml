@@ -14,39 +14,34 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
         <!--Username-->
         <TextView
             android:id="@+id/login_text_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="3dp"
-            android:text="@string/login_text_username"
-            />
+            android:text="@string/login_text_username" />
 
         <EditText
             android:id="@+id/login_edit_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            />
+            android:inputType="text" />
 
         <!--Password-->
         <TextView
             android:id="@+id/login_text_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
-            />
+            android:padding="3dp" />
 
         <!--Login Button-->
         <EditText
             android:id="@+id/login_edit_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
 
     </LinearLayout>
 

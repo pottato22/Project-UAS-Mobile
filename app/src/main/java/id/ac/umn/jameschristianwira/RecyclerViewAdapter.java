@@ -1,19 +1,14 @@
 package id.ac.umn.jameschristianwira;
 
 import android.app.Notification;
-import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.graphics.Bitmap;
-import android.graphics.drawable.Icon;
-import android.os.AsyncTask;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,10 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
-import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder> {
     private ArrayList<Characters> characters;
@@ -78,16 +71,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
                 @Override
                 public boolean onLongClick(View view) {
-                    makeToast("onLongClick");
+                    makeToast("Character will be shown in notification");
 
                     notificationManagerCompat = NotificationManagerCompat.from(context);
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(context,
-                                    "Data is successfully uploaded.",
-                                    Toast.LENGTH_LONG).show();
                             notificationManagerCompat = NotificationManagerCompat.from(context);
                             sendOnChannel(getAdapterPosition());
                         }
@@ -96,7 +86,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     return true;
                 }
 
-                public void sendOnChannel(int pos){
+                public void sendOnChannel(int pos) {
                     String title = "Hi, I'm " + characters.get(pos).getRealname();
                     String message = "I'm playing as " + characters.get(pos).getCharName() + " in Game of Thrones";
 
@@ -130,10 +120,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             });
         }
 
-        public void makeToast(String text){
-            Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
-        }
-
         public String createImageFromBitmap(Bitmap bitmap) {
             String fileName = "temp";//no .png or .jpg needed
             try {
@@ -150,5 +136,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         }
 
 
+    }
+
+    public void makeToast(String text) {
+        Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
     }
 }
