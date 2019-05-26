@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationManagerCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -80,6 +81,7 @@ public class DataActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu_logout:
+                setResult(2);
                 finish();
         }
         return super.onOptionsItemSelected(item);
@@ -253,9 +255,19 @@ public class DataActivity extends AppCompatActivity {
         Log.d("viewData", "Start showing data");
 
         recyclerView = findViewById(R.id.data_recycler_view);
-        adapter = new RecyclerViewAdapter(characters, getApplicationContext(), reciever);
+        adapter = new RecyclerViewAdapter(characters, DataActivity.this, reciever);
         layoutManager = new LinearLayoutManager(DataActivity.this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(resultCode == 2){
+            setResult(2);
+            finish();
+        }
     }
 }

@@ -1,5 +1,6 @@
 package id.ac.umn.jameschristianwira;
 
+import android.app.Activity;
 import android.app.Notification;
 import android.content.Context;
 import android.content.Intent;
@@ -91,13 +92,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     String message = "I'm playing as " + characters.get(pos).getCharName() + " in Game of Thrones";
 
                     Notification notification = new NotificationCompat.Builder(context, Notif.CHANNEL_1_ID)
-                            .setSmallIcon(R.drawable.ic_one)
+                            .setSmallIcon(R.drawable.ic_stat_name2)
                             .setContentTitle(title)
                             .setContentText(message)
                             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                             .build();
 
-                    notificationManagerCompat.notify(1, notification);
+                    notificationManagerCompat.notify(2, notification);
                 }
 
             });
@@ -115,7 +116,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                     intent.putExtra("birthday", characters.get(pos).getBirthday());
                     intent.putExtra("gender", characters.get(pos).getGender());
                     createImageFromBitmap(characters.get(pos).getPhoto());
-                    itemView.getContext().startActivity(intent);
+                    //itemView.getContext().startActivity(intent);
+                    ((Activity) context).startActivityForResult(intent, 0);
                 }
             });
         }

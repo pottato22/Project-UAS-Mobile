@@ -76,8 +76,8 @@ public class DetailActivity extends AppCompatActivity {
         String title = "Hi, I'm " + realname;
         String message = "I'm playing as " + charname + " in Game of Thrones";
 
-        Notification notification = new NotificationCompat.Builder(getApplicationContext(), Notif.CHANNEL_1_ID)
-                .setSmallIcon(R.drawable.ic_one)
+        Notification notification = new NotificationCompat.Builder(getApplicationContext(), Notif.CHANNEL_2_ID)
+                .setSmallIcon(R.drawable.ic_stat_name)
                 .setContentTitle(title)
                 .setContentText(message)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
@@ -148,6 +148,10 @@ public class DetailActivity extends AppCompatActivity {
                 Intent intent = new Intent(DetailActivity.this, AboutMe.class);
                 startActivity(intent);
                 break;
+
+            case R.id.menu_logout:
+                setResult(2);
+                finish();
         }
         return super.onOptionsItemSelected(item);
     }
