@@ -270,4 +270,13 @@ public class DataActivity extends AppCompatActivity {
             finish();
         }
     }
+
+    @Override
+    public void onBackPressed() {
+        Log.d("BACKBUTTON", "Back Button Pressed");
+        setResult(2);
+        finish();
+
+        super.onBackPressed();
+    }
 }
