@@ -99,6 +99,8 @@ public class DetailActivity extends AppCompatActivity {
             );
 
             character = temp;
+
+            setTitle("Detail of " + character.getRealname());
         } else character = null;
     }
 

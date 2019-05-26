@@ -942,6 +942,7 @@ drawable ic_notifications
 drawable ic_one
 drawable ic_stat_name
 drawable ic_stat_name2
+drawable iron_throne
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1105,6 +1106,7 @@ id list_photo
 id list_real_name
 id login_edit_password
 id login_edit_username
+id login_logo
 id login_main_linear
 id login_text_password
 id login_text_username
