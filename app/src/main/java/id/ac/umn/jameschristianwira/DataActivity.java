@@ -28,6 +28,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 
 public class DataActivity extends AppCompatActivity {
@@ -77,6 +78,9 @@ public class DataActivity extends AppCompatActivity {
                 Intent intent = new Intent(DataActivity.this, AboutMe.class);
                 startActivity(intent);
                 break;
+
+            case R.id.menu_logout:
+                finish();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -192,23 +196,31 @@ public class DataActivity extends AppCompatActivity {
         protected void onProgressUpdate(Void... values) {
             super.onProgressUpdate(values);
 
+            loadingText.setText("Loading " + current + "/" + length);
             progressText.clearComposingText();
-            progressText.setText(current + "/" + length);
+            //progressText.setText(current + "/" + length);
         }
 
         @Override
         protected void onPostExecute(String s) {
-            super.onPostExecute(s);
+            if(s != null){
+                super.onPostExecute(s);
 
-            Log.d("onPostExecute", s);
+                Log.d("onPostExecute", s);
 
-            ProgressBar progressBar = findViewById(R.id.data_progressbar);
+                ProgressBar progressBar = findViewById(R.id.data_progressbar);
 
-            progressBar.setVisibility(View.GONE);
-            loadingText.setVisibility(View.GONE);
-            progressText.setVisibility(View.GONE);
+                progressBar.setVisibility(View.GONE);
+                loadingText.setVisibility(View.GONE);
+                progressText.setVisibility(View.GONE);
 
-            viewData();
+                viewData();
+            }
+            else{
+                Log.e("NO CONNECTION", "You are here");
+                setResult(0);
+                finish();
+            }
         }
     }
 

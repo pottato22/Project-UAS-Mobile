@@ -97,7 +97,7 @@ ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:20:9-50
 	android:name
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:20:19-47
 activity#id.ac.umn.jameschristianwira.AboutMe
-ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:9-44
+ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:9-45
 	android:name
 		ADDED from C:\Project\ProjectUAS_14026\app\src\main\AndroidManifest.xml:21:19-42
 activity#id.ac.umn.jameschristianwira.MainActivity

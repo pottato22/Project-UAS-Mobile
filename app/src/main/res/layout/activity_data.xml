@@ -12,31 +12,48 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="visible"
+        android:padding="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <TextView
+        android:textAlignment="center"
+        android:id="@+id/data_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depending on your connection\nThis might take a while"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/data_loadingtext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/data_loadingtext"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Loading data\nThis might take a while"-->
+        <!--android:textAlignment="center"-->
+        <!--android:visibility="visible"-->
+        <!--android:padding="5dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/data_progress"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent" />-->
+
+    <TextView
         android:id="@+id/data_loadingtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loading data\nThis might take a while"
+        android:text="Loading data\n"
         android:textAlignment="center"
         android:visibility="visible"
+        android:padding="5dp"
         app:layout_constraintTop_toBottomOf="@id/data_progressbar"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 
-    <TextView
-        android:id="@+id/data_progress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        app:layout_constraintTop_toBottomOf="@id/data_loadingtext"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/data_recycler_view"

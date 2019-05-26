@@ -3,6 +3,7 @@ package id.ac.umn.jameschristianwira;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     //Start change intent here
 
                     Intent intent = new Intent(MainActivity.this, DataActivity.class);
-                    startActivity(intent);
+                    startActivityForResult(intent, 1);
                 } else {
                     Log.i("Login Process", "Username and password don't match");
                     makeToast("Username and password don't match");
@@ -86,5 +87,22 @@ public class MainActivity extends AppCompatActivity {
 
     public void makeToast(String text) {
         Toast.makeText(MainActivity.this, text, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(resultCode == 0){
+            makeToast("You are not connected to internet");
+        }
+        if(resultCode == 1){
+            finish();
+        }
+        if(resultCode == 2){
+            makeToast("You have been logged out");
+            edtUsername.setText("");
+            edtPassword.setText("");
+        }
     }
 }

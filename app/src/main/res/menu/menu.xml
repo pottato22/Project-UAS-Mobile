@@ -3,4 +3,8 @@
     <item
         android:id="@+id/menu_about_me"
         android:title="About me" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Log Out"
+        />
 </menu>
